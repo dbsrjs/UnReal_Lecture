@@ -1,0 +1,178 @@
+void main()
+{
+	/*int n;
+
+	printf("숫자를 입력하세요 : ");
+	scanf("%d", &n);
+
+	for (int i = 1; i <= n; i++)
+	{
+		int num = i;
+		int has369 = 0;
+
+		while (num > 0)
+		{
+			int digit = num % 10;
+			if (digit == 3 || digit == 6 || digit == 9)
+			{
+				has369 = 1;
+				break;
+			}
+			num /= 10;
+		}
+		if (has369)
+		{
+			printf("짝 \n");
+		}
+		else
+		{
+			printf("%d \n", i);
+		}
+	}*/
+
+	/*int i = 1, sum = 0;
+
+	while (i <= 100)
+	{
+		sum += i;
+		++i;
+	}
+
+	for (int i = 1; i <= 100; i++)
+		sum += i;
+	printf("1부터 100까지의 합 : %d \n", sum);*/
+
+	/*while (1)
+	{
+		system("cls");
+
+		int input;
+		printf("마이펫 \n");
+		printf("무엇을 하실 것인지 입력하세요 \n");
+		printf("1. 밥 주기 \n");
+		printf("2. 씻기기 \n");
+		printf("3. 재우기 \n");
+		printf("4. 종료 \n");
+
+		scanf("%d", &input);
+
+		if (input == 4)
+			break;
+		else if (input == 1)
+			printf("아이 맛있어 \n");
+		else if (input == 2)
+			printf("아이 시원해 \n");
+		else if (input == 3)
+			printf("zzz \n");
+		else
+			printf("무슨 명령인지 못 알아 듣겠어.. \n");
+
+		system("pause");
+	}*/
+
+	/*int input;
+	printf("마이펫 \n");
+	printf("무엇을 하실 것인지 입력하세요 \n");
+	printf("1. 밥 주기 \n");
+	printf("2. 씻기기 \n");
+	printf("3. 재우기 \n");
+
+	scanf("%d", &input);
+
+	switch (input)
+	{
+		case 1:
+			printf("아이 맛있어 \n");
+			break;
+		case 2:
+			printf("아이 시원해 \n");
+			break;
+		case 3:
+			printf("zzz \n");
+			break;
+		default:
+			printf("무슨 명령인지 못 알아 듣겠어.. \n");
+			break;
+	}*/
+
+	/*int a, b;
+	float c, d;
+
+	printf("두 숫자 입력 : ");
+	scanf("%d %d", & a, & b);
+
+	c = a / b;
+	d = (float)a / b;
+
+	printf("두 수의 비율 : %f %f", c, d);*/
+	
+	/*int arr[10] = { 2, 10, 30, 21, 34, 23, 53, 21, 9, 1 };
+	for (int i = 0; i < 10; i++)
+	{
+		if (i % 2 == 1)
+		{
+			printf("배열 %d 번째 원소는 짝수이다. : %d \n", i + 1, arr[i]);
+		}
+	}*/
+
+	/*while (1)
+	{
+		int menu[5] = {1000, 1000, 1200, 1300, 1500};
+		char name[5][20] = { {"콜라"}, {"사이다"},{"환타"},{"커피"},{"우유"} };
+
+		int money;	//넣은 돈
+		int n;	//음료 번호
+
+		printf("\n");
+		printf("\n");
+
+		printf("자판기 메뉴 \n");
+		for (int i = 0; i < sizeof(menu) / sizeof(int); i++)
+			printf("%d. %s(%d원) \n", i + 1, name[i], menu[i]);
+		printf("6. 자판기 종료 \n");
+
+		
+		printf("원하는 음료의 번호를 입력 해주세요 : ");
+		scanf("%d", &n);
+
+		if (n - 1 > sizeof(menu)/sizeof(int))
+		{
+			printf("존재하지 않는 상품입니다. 다시 입력해주세요. \n");
+			continue;
+		}
+		if (n == 6)
+		{
+			printf("자판기를 종료합니다 \n");
+			break;
+		}
+
+		printf("돈을 넣어주세요 : ");
+		printf("\n");
+		scanf("%d", &money);
+
+		if (money >= menu[n-1])
+		{
+			printf("%s를 제공합니다 \n", &name[n-1]);
+			printf("잔돈은 %d원입니다. \n", money - menu[n - 1]);
+		}
+		else
+		{
+			printf("돈이 부족합니다 다시 입력해주세요 \n");
+		}
+	}*/
+
+	int arr[5];
+	int i, ave = 0;
+
+	for (i = 0; i < 5; i++)
+	{
+		printf("%d번째 학생의 성적은? : ", i + 1);
+		scanf("%d", & arr[i]);
+	}
+	for (i = 0; i < 5; i++)
+	{
+		ave = ave + arr[i];
+	}
+
+	printf("전체 학생의 평균은 : %d \n", ave / 5);
+}
