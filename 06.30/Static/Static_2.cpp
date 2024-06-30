@@ -1,34 +1,32 @@
-/*
 #include <iostream>
 using namespace std;
 
 class Person {
 public:
-	int money;//°³ÀÎ ¼ÒÀ¯ÀÇ µ·
+	int money;//ê°œì¸ ì†Œìœ ì˜ ëˆ
 	void addMoney(int money) {
 		this->money += money;
 	}
 
-	static int sharedMoney;//°ø±İ
+	static int sharedMoney;//ê³µê¸ˆ
 	static void addShard(int n) {
 		sharedMoney += n;
 	}
 };
 
-//static º¯¼ö »ı¼º. Àü¿¬ °ø°£¿¡ »ı¼º
-int Person::sharedMoney = 10;//10À¸·Î ÃÊ±âÈ­
+//static ë³€ìˆ˜ ìƒì„±. ì „ì—° ê³µê°„ì— ìƒì„±
+int Person::sharedMoney = 10;//10ìœ¼ë¡œ ì´ˆê¸°í™”
 
-//main() ÇÔ¼ö
+//main() í•¨ìˆ˜
 int main() {
-	Person::addShard(50);//static¸â¹ö Á¢±Ù, °ø±İ 60
+	Person::addShard(50);//staticë©¤ë²„ ì ‘ê·¼, ê³µê¸ˆ 60
 	cout << Person::sharedMoney << endl;
 
 	Person han;
 	han.money = 100;
-	han.sharedMoney = 200;//static ¸â¹ö Á¢±Ù , °ø±İ 200
-	Person::sharedMoney = 300;//static ¸â¹ö Á¢±Ù, °ø±İ 300
-	Person::addShard(100);//static ¸â¹ö Á¢±Ù, °ø±İ 400
+	han.sharedMoney = 200;//static ë©¤ë²„ ì ‘ê·¼ , ê³µê¸ˆ 200
+	Person::sharedMoney = 300;//static ë©¤ë²„ ì ‘ê·¼, ê³µê¸ˆ 300
+	Person::addShard(100);//static ë©¤ë²„ ì ‘ê·¼, ê³µê¸ˆ 400
 
 	cout << han.money << ' ' << Person::sharedMoney << endl;
 }
-*/
