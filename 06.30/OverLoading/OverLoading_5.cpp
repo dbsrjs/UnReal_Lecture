@@ -1,23 +1,21 @@
-/*
 #include <iostream>
 using namespace std;
 
-void fillLine() {	//25°³ÀÇ '*'¹®ÀÚ¸¦ ÇÑ ¶óÀÎ¿¡ Ãâ·Â
+void fillLine() {	//25ê°œì˜ '*'ë¬¸ìë¥¼ í•œ ë¼ì¸ì— ì¶œë ¥
 	for (int i = 0; i < 25; i++) cout << '*';
 	cout << endl;
 }
 
-void fillLine(int n, char c) {//n°³ÀÇ c¹®ÀÚ¸¦ ÇÑ ¶óÀÎ¿¡ Ãâ·Â
+void fillLine(int n, char c) {//nê°œì˜ cë¬¸ìë¥¼ í•œ ë¼ì¸ì— ì¶œë ¥
 	for (int i = 0; i < n; i++) cout << c;
 	cout << endl;
 }
-void fillLine(int n = 25, char c = '*') {//n°³ÀÇ c¹®ÀÚ¸¦ ÇÑ ¶óÀÎ¿¡ Ãâ·Â
+void fillLine(int n = 25, char c = '*') {//nê°œì˜ cë¬¸ìë¥¼ í•œ ë¼ì¸ì— ì¶œë ¥
 	for (int i = 0; i < n; i++) cout << c;
 	cout << endl;
 }
 
 int main() {
-	fillLine();			//25°³ÀÇ '*'¸¦ ÇÑ ¶óÀÎ¿¡ Ãâ·Â
-	fillLine(10, '%');	//10°³ÀÇ '%'¸¦ ÇÑ ¶óÀÎ¿¡ Ãâ·Â
+	fillLine();			//25ê°œì˜ '*'ë¥¼ í•œ ë¼ì¸ì— ì¶œë ¥
+	fillLine(10, '%');	//10ê°œì˜ '%'ë¥¼ í•œ ë¼ì¸ì— ì¶œë ¥
 }
-*/
