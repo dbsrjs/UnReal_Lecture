@@ -1,4 +1,3 @@
-/*
 #include <iostream>
 using namespace std;
 
@@ -11,7 +10,6 @@ double square(double a) {
 }
 
 int main() {
-	cout << square(3.0);//square(double a); È£Ãâ
-	//cout << square(3);	 //ÄÄÆÄÀÏ ¿À·ù
+	cout << square(3.0);//square(double a); ÄŒÅÄ‚Ã¢
+	//cout << square(3);	 //Ã„Ã„Ä†Ã„Å”ÄŽ Å¼Å”Ë‡Å¯
 }
-*/
