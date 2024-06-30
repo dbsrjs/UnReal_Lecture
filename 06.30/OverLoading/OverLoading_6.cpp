@@ -1,4 +1,3 @@
-/*
 #include <iostream>
 using namespace std;
 
@@ -6,7 +5,7 @@ class MyVector {
 	int* p;
 	int size;
 public:
-	//À§ÀÓ »ı¼ºÀÚ
+	//ìœ„ì„ ìƒì„±ì
 	MyVector() : MyVector(100) {}
 	MyVector(int n) {
 		p = new int[n];
@@ -22,10 +21,9 @@ public:
 
 int main() {
 	MyVector* v1, * v2;
-	v1 = new MyVector();			//µğÆúÆ®·Î Á¤¼ö 100°³ÀÇ ¹è¿­ µ¿Àû ÇÒ´ç
-	v2 = new MyVector(1024);	//Á¤¼ö 1024°³ÀÇ ¹è¿­ µ¿Àû ÇÒ´ç
+	v1 = new MyVector();			//ë””í´íŠ¸ë¡œ ì •ìˆ˜ 100ê°œì˜ ë°°ì—´ ë™ì  í• ë‹¹
+	v2 = new MyVector(1024);	//ì •ìˆ˜ 1024ê°œì˜ ë°°ì—´ ë™ì  í• ë‹¹
 
 	delete v1;
 	delete v2;
 }
-*/
