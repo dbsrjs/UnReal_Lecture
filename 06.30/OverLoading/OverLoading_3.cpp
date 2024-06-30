@@ -1,13 +1,12 @@
-/*
 #include <iostream>
 #include <string>
 using namespace std;
 
-//¿øÇü ¼±¾ğ
+//ì›í˜• ì„ ì–¸
 void star(int a = 5);
 void msg(int id, string text = "");
 
-//ÇÔ¼ö ±¸Çö
+//í•¨ìˆ˜ êµ¬í˜„
 void star(int a) {
 	for (int i = 0; i < a; i++)
 		cout << '*';
@@ -19,12 +18,11 @@ void msg(int id, string text) {
 }
 
 int main() {
-	//star() È£Ãâ
+	//star() í˜¸ì¶œ
 	star();
 	star(10);
 
-	//msg È£Ãâ
+	//msg í˜¸ì¶œ
 	msg(10);
 	msg(10, "Hello");
 }
-*/
