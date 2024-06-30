@@ -1,15 +1,14 @@
-/*
 #include <iostream>
 using namespace std;
 
-int sum(int a, int b) {//a¿¡¼­ b±îÁö ÇÕÇÏ±â
+int sum(int a, int b) {//aì—ì„œ bê¹Œì§€ í•©í•˜ê¸°
 	int cnt = 0;
 	for (int i = a; i <= b; i++)
 		cnt += i;
 	return cnt;
 }
 
-int sum(int a) {//0¿¡¼­ a±îÁö ÇÕÇÏ±â
+int sum(int a) {//0ì—ì„œ aê¹Œì§€ í•©í•˜ê¸°
 	int cnt = 0;
 	for (int i = 0; i <= a; i++)
 		cnt += i;
@@ -21,4 +20,3 @@ int main() {
 	cout << sum(3) << endl;
 	cout << sum(100) << endl;
 }
-*/
