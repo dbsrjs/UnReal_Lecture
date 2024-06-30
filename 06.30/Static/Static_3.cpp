@@ -1,4 +1,3 @@
-/*
 #include <iostream>
 using namespace std;
 
@@ -14,4 +13,3 @@ int main() {
 	cout << Math::max(10, 8) << endl;
 	cout << Math::min(-3, -8) << endl;
 }
-*/
