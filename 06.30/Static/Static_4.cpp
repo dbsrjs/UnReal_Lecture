@@ -1,4 +1,3 @@
-/*
 #include <iostream>
 using namespace std;
 
@@ -8,28 +7,27 @@ private:
 	int radius;
 public:
 	Circle(int r = 1);
-	~Circle() { numOfCircles--; }//»ı¼ºµÈ ¿øÀÇ °³¼ö °¨µµ
+	~Circle() { numOfCircles--; }//ìƒì„±ëœ ì›ì˜ ê°œìˆ˜ ê°ë„
 	double getArea() { return 3.14 * radius * radius; }
 	static int getNumOfCircles() { return numOfCircles; }
 };
 
 Circle::Circle(int r) {
 	radius = r;
-	numOfCircles++;//»ı¼ºµÈ ¿øÀÇ °³¼ö Áõ°¡
+	numOfCircles++;//ìƒì„±ëœ ì›ì˜ ê°œìˆ˜ ì¦ê°€
 };
-int Circle::numOfCircles = 0;//0À¸·Î ÃÊ±âÈ­
+int Circle::numOfCircles = 0;//0ìœ¼ë¡œ ì´ˆê¸°í™”
 
 int main() {
-	Circle* p = new Circle[10];//10°³ÀÇ »ı¼ºÀÚ ½ÇÇà
-	cout << "»ıÁ¸ÇÏ°í ÀÖ´Â ¿øÀÇ °³¼ö = " << Circle::getNumOfCircles() << endl;
+	Circle* p = new Circle[10];//10ê°œì˜ ìƒì„±ì ì‹¤í–‰
+	cout << "ìƒì¡´í•˜ê³  ìˆëŠ” ì›ì˜ ê°œìˆ˜ = " << Circle::getNumOfCircles() << endl;
 
-	delete[] p;//10°³ÀÇ ¼Ò¸êÀÚ ½ÇÇà
-	cout << "»ıÁ¸ÇÏ°í ÀÖ´Â ¿øÀÇ °³¼ö = " << Circle::getNumOfCircles() << endl;
+	delete[] p;//10ê°œì˜ ì†Œë©¸ì ì‹¤í–‰
+	cout << "ìƒì¡´í•˜ê³  ìˆëŠ” ì›ì˜ ê°œìˆ˜ = " << Circle::getNumOfCircles() << endl;
 
-	Circle a;//»ı¼ºÀÚ ½ÇÇà
-	cout << "»ıÁ¸ÇÏ°í ÀÖ´Â ¿øÀÇ °³¼ö = " << Circle::getNumOfCircles() << endl;
+	Circle a;//ìƒì„±ì ì‹¤í–‰
+	cout << "ìƒì¡´í•˜ê³  ìˆëŠ” ì›ì˜ ê°œìˆ˜ = " << Circle::getNumOfCircles() << endl;
 
-	Circle b;//»ı¼ºÀÚ ½ÇÇà
-	cout << "»ıÁ¸ÇÏ°í ÀÖ´Â ¿øÀÇ °³¼ö = " << Circle::getNumOfCircles() << endl;
+	Circle b;//ìƒì„±ì ì‹¤í–‰
+	cout << "ìƒì¡´í•˜ê³  ìˆëŠ” ì›ì˜ ê°œìˆ˜ = " << Circle::getNumOfCircles() << endl;
 }
-*/
