@@ -1,4 +1,3 @@
-/*
 #include <iostream>
 using namespace std;
 
@@ -13,6 +12,5 @@ int add(int a, int& b) {
 
 int main() {
 	int s = 10, t = 20;
-	//cout add(s, t);//¿©±â¼­ ¸ğÈ£¼ºÀÌ ¹ß»ıÇÒ ¼ö ÀÖ´Ù.
+	//cout add(s, t);//ì—¬ê¸°ì„œ ëª¨í˜¸ì„±ì´ ë°œìƒí•  ìˆ˜ ìˆë‹¤.
 }
-*/
