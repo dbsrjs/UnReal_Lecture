@@ -86,9 +86,9 @@ public:
 };
 
 int main() {
-	ArrayList list; //ArrayList ì¸ìŠ¤í„´ìŠ¤ ìƒì„±
+	ArrayList list; //ArrayList ÀÎ½ºÅÏ½º »ı¼º
 
-	//ì‚½ì… ì‘ì—…
+	//»ğÀÔ ÀÛ¾÷
 	list.insert(0, 10);
 	list.insert(0, 20);
 	list.insert(1, 30);
